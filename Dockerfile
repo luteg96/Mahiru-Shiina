@@ -12,4 +12,5 @@ RUN mkdir /Shiina-Mahiru
 WORKDIR /Shiina-Mahiru
 COPY start.sh /Shiina-Mahiru/start.sh
 COPY bot.py /Shiina-Mahiru/bot.py
+COPY web.py /Shiina-Mahiru/web.py
 CMD ["/bin/bash", "/Shiina-Mahiru/start.sh"]
