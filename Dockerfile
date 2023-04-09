@@ -12,5 +12,4 @@ RUN pip3 install -U -r requirements.txt
 RUN mkdir /Shiina-Mahiru
 WORKDIR /Shiina-Mahiru
 COPY start.sh /start.sh
-RUN ls
-CMD ["/bin/bash", "python", "bot.py", "/start.sh"]
+CMD ["/bin/bash", "python3", "bot.py", "/start.sh"]
