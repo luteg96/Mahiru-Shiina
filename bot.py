@@ -26,7 +26,7 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins)
     Ntbot.run()
-    app = web.AppRunner(await web_server())
-    await app.setup()
+    app = web.AppRunner(web_server())
+    app.setup()
     bind_address = "0.0.0.0"
-    await web.TCPSite(app, bind_address, PORT).start()
+    aweb.TCPSite(app, bind_address, PORT).start()
