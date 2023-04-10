@@ -1,6 +1,3 @@
-from aiohttp import web
-from plugins import web_server
-
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -26,7 +23,3 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins)
     Ntbot.run()
-    app = web.AppRunner(web_server())
-    app.setup()
-    bind_address = "0.0.0.0"
-    aweb.TCPSite(app, bind_address, PORT).start()
